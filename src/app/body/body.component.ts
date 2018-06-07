@@ -10,10 +10,10 @@ export class BodyComponent implements OnInit {
 
   submitInfo = "This will update once submitted"
   infoUp = "Hello"
-  private _infoform: FormGroup;
+  public _infoform: FormGroup;
   
 
-  constructor(private _form: FormBuilder) { 
+  constructor(public _form: FormBuilder) { 
     this.createForm()
   }
 
