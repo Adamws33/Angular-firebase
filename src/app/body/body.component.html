@@ -1,0 +1,17 @@
+<h2>Please enter in some information here</h2>
+
+<form (ngSubmit)="Submit()" [formGroup]="_infoform">
+  <div>
+    <div>
+        <input matInput placeholder="Type some info here" formControlName="Info" type="text" required (keyup)="updateInfo()"/>
+    </div>
+    <div>
+      <h3>When you enter info above the <u>{{infoUp}}</u> will update in real time</h3>
+    </div>
+    <div>
+      <h3>When you submit the info below this value will change: <u>{{submitInfo}}</u></h3>
+    </div>
+    <br>
+  </div>
+  <button class="nav-btn" color="primary" type="submit">Submit</button>
+</form>
